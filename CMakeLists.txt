@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.6)
+find_package(OpenCV REQUIRED)
+project (Tutorial)
+add_executable(bma bma.cpp)
+target_link_libraries(bma ${OpenCV_LIBS})
