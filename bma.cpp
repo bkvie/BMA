@@ -26,7 +26,6 @@ img2.convertTo(float_img2, CV_32FC3,1.0/255.0);
 struct BlockMatchingCost {
 Mat imgR, imgL;
 BlockMatchingCost ();
-
 BlockMatchingCost (Mat init_val, Mat init_id)
 {
     imgR = init_val;
@@ -48,6 +47,13 @@ return x;
 }
 
 */
+
+void blockmatch(BlockMatchingCost & cost, Mat disparity) {
+
+for (int i=0; i<Tempimg.rows; i++) {
+    	for(int j=0; j<Tempimg.cols; i++)
+
+
 
 
 
